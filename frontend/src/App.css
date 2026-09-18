@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* HTML / BODY */
+/* ============================= */
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #17233c;
+}
+
+
+/* ============================= */
+/* APP LAYOUT */
+/* ============================= */
+
+.app {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+    height: 80px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid #eee;
+
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #4f46e5;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #17233c;
+}
+
+.nav-links button {
+    padding: 10px 25px;
+
+    border: 1px solid #4f46e5;
+
+    background: white;
+
+    color: #4f46e5;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.nav-links .signup {
+    background: #4f46e5;
+
+    color: white;
+}
+
+
+/* ============================= */
+/* MAIN */
+/* ============================= */
+
+main {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 70px 20px;
+
+    /*
+       Ye main ko available
+       vertical space dega.
+    */
+    flex: 1;
+}
+
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.hero h1 {
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #4f46e5;
+}
+
+.hero p {
+    font-size: 20px;
+
+    color: #64748b;
+}
+
+
+/* ============================= */
+/* URL FORM */
+/* ============================= */
+
+.url-form {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.url-form h2 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+
+    gap: 15px;
+}
+
+.input-container input {
+    flex: 1;
+
+    padding: 17px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.input-container input:focus {
+    border-color: #4f46e5;
+}
+
+.input-container button {
+    padding: 0 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    opacity: 0.9;
+}
+
+
+/* ============================= */
+/* ERROR */
+/* ============================= */
+
+.error {
+    margin-top: 15px;
+
+    color: #dc2626;
+
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* RESULT */
+/* ============================= */
+
+.result {
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background: #ecfdf5;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 15px;
+}
+
+.result-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.result-title h3 {
+    color: #166534;
+}
+
+.short-url {
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.short-url span {
+    color: #4f46e5;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    word-break: break-all;
+}
+
+.short-url button {
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e2e8f0;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.result a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #17233c;
+
+    text-decoration: none;
+}
+
+
+/* ============================= */
+/* FEATURES */
+/* ============================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+    margin-top: 70px;
+}
+
+.features div {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+.features h3 {
+    margin-bottom: 10px;
+}
+
+.features p {
+    color: #64748b;
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #eef2ff;
+
+    color: #475569;
+
+    /*
+       Footer apni jagah maintain karega.
+    */
+    flex-shrink: 0;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-container button {
+        padding: 15px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .short-url {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .short-url button {
+        width: 100%;
+    }
+}
