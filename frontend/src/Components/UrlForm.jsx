@@ -16,7 +16,7 @@ function UrlForm({ setShortUrl }) {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:5000/api/url/shorten",
+        "/api/url/shorten",
         {
           originalUrl: url,
         },
